@@ -1,7 +1,7 @@
 {
   "apis": [
     {
-      "id": "0aec09b4-ad17-41a5-9079-807116c3a0e6",
+      "id": "7226500b-33e7-44de-90ce-f32606a490f5",
       "name": "Remove Background",
       "endpoint": "https://api.remove.bg/v1.0/removebg",
       "category": "Tools",
@@ -33,15 +33,15 @@
         }
       ],
       "requiresKey": true,
-      "apiKey": "ak_c2365f38e6ca254f930ab4054ad6e6364f542611",
+      "apiKey": "ak_aa5a1645de2f3f332479223338ae152a3aec2943",
       "apiType": "proxy",
       "handlerFile": "",
       "isActive": true,
-      "createdAt": "2026-02-13T17:20:59.971Z",
-      "updatedAt": "2026-02-13T17:21:00.087Z"
+      "createdAt": "2026-02-13T17:28:11.832Z",
+      "updatedAt": "2026-02-13T17:28:11.847Z"
     },
     {
-      "id": "74cc5e75-09c6-4733-95f1-91085b9eab5b",
+      "id": "bfb9e392-e07b-455d-b204-eba8c11f9a13",
       "name": "QR Code Generator",
       "endpoint": "https://api.qrserver.com/v1/create-qr-code/",
       "category": "Tools",
@@ -78,11 +78,11 @@
       "apiType": "proxy",
       "handlerFile": "",
       "isActive": true,
-      "createdAt": "2026-02-13T17:21:00.087Z",
-      "updatedAt": "2026-02-13T17:21:00.087Z"
+      "createdAt": "2026-02-13T17:28:11.847Z",
+      "updatedAt": "2026-02-13T17:28:11.847Z"
     },
     {
-      "id": "b59b7422-2131-452f-8845-bc5beb4846c8",
+      "id": "ab90018b-7fa4-44fa-ac2c-c8f14146bd12",
       "name": "Screenshot Website",
       "endpoint": "https://shot.screenshotapi.net/screenshot",
       "category": "Tools",
@@ -115,15 +115,15 @@
         }
       ],
       "requiresKey": true,
-      "apiKey": "ak_eff12f4a921c9a04a2de7736c655f2065d5037b9",
+      "apiKey": "ak_1cd7d3d323621d4358c72c9c369f7ffc69b2a3b4",
       "apiType": "proxy",
       "handlerFile": "",
       "isActive": true,
-      "createdAt": "2026-02-13T17:21:00.087Z",
-      "updatedAt": "2026-02-13T17:21:00.087Z"
+      "createdAt": "2026-02-13T17:28:11.847Z",
+      "updatedAt": "2026-02-13T17:28:11.847Z"
     },
     {
-      "id": "13724b56-c59b-4e18-8300-ab047d4ad6fb",
+      "id": "b341627e-4618-45c9-806d-3a043b7194a9",
       "name": "Anime Waifu",
       "endpoint": "https://api.waifu.pics/sfw/waifu",
       "category": "E-photo",
@@ -142,11 +142,11 @@
       "apiType": "proxy",
       "handlerFile": "",
       "isActive": true,
-      "createdAt": "2026-02-13T17:21:00.087Z",
-      "updatedAt": "2026-02-13T17:21:00.087Z"
+      "createdAt": "2026-02-13T17:28:11.847Z",
+      "updatedAt": "2026-02-13T17:28:11.847Z"
     },
     {
-      "id": "6d0d6df8-6355-4279-a76e-817de70e703f",
+      "id": "252de77b-3b79-4e98-bd3f-7414a562266c",
       "name": "Random Meme",
       "endpoint": "https://meme-api.com/gimme",
       "category": "E-photo",
@@ -172,11 +172,11 @@
       "apiType": "proxy",
       "handlerFile": "",
       "isActive": true,
-      "createdAt": "2026-02-13T17:21:00.087Z",
-      "updatedAt": "2026-02-13T17:21:00.087Z"
+      "createdAt": "2026-02-13T17:28:11.847Z",
+      "updatedAt": "2026-02-13T17:28:11.847Z"
     },
     {
-      "id": "02075c1f-81f3-4653-8343-0c6baf697aa2",
+      "id": "b1baa8b9-e7c2-4aa2-a1ad-b89ffa5fe446",
       "name": "Truth or Dare",
       "endpoint": "https://api.truthordarebot.xyz/v1/truth",
       "category": "Games",
@@ -202,11 +202,11 @@
       "apiType": "proxy",
       "handlerFile": "",
       "isActive": true,
-      "createdAt": "2026-02-13T17:21:00.087Z",
-      "updatedAt": "2026-02-13T17:21:00.087Z"
+      "createdAt": "2026-02-13T17:28:11.847Z",
+      "updatedAt": "2026-02-13T17:28:11.847Z"
     },
     {
-      "id": "2bfbbff7-0ce9-4738-a534-b94670b65485",
+      "id": "bad81377-5480-407f-b1e7-b03db3d37766",
       "name": "Trivia Quiz",
       "endpoint": "https://opentdb.com/api.php",
       "category": "Games",
@@ -243,11 +243,11 @@
       "apiType": "proxy",
       "handlerFile": "",
       "isActive": true,
-      "createdAt": "2026-02-13T17:21:00.087Z",
-      "updatedAt": "2026-02-13T17:21:00.087Z"
+      "createdAt": "2026-02-13T17:28:11.847Z",
+      "updatedAt": "2026-02-13T17:28:11.847Z"
     },
     {
-      "id": "f51cc96a-7d80-402c-9e09-e1f5333a46f0",
+      "id": "818368a0-c59b-4d86-9986-e4f652a0bf90",
       "name": "Weather Info",
       "endpoint": "https://api.openweathermap.org/data/2.5/weather",
       "category": "Information",
@@ -280,15 +280,15 @@
         }
       ],
       "requiresKey": true,
-      "apiKey": "ak_57e7bb5e256e872e38418ab76536ef961be83185",
+      "apiKey": "ak_08d41bfda727e10859e07a413a8ac1d0c012691c",
       "apiType": "proxy",
       "handlerFile": "",
       "isActive": true,
-      "createdAt": "2026-02-13T17:21:00.087Z",
-      "updatedAt": "2026-02-13T17:21:00.087Z"
+      "createdAt": "2026-02-13T17:28:11.847Z",
+      "updatedAt": "2026-02-13T17:28:11.847Z"
     },
     {
-      "id": "94f26ced-8640-4167-b620-b4319fa547fb",
+      "id": "9e303531-a51c-49d4-b8e1-a08eaf56947f",
       "name": "Islamic Prayer Times",
       "endpoint": "https://api.aladhan.com/v1/timingsByCity",
       "category": "Information",
@@ -320,11 +320,11 @@
       "apiType": "proxy",
       "handlerFile": "",
       "isActive": true,
-      "createdAt": "2026-02-13T17:21:00.087Z",
-      "updatedAt": "2026-02-13T17:21:00.087Z"
+      "createdAt": "2026-02-13T17:28:11.847Z",
+      "updatedAt": "2026-02-13T17:28:11.847Z"
     },
     {
-      "id": "ed333985-4fc4-4b50-b2cb-fe2ab7a910c4",
+      "id": "668a7f76-3833-4867-99e9-7b652c07bbec",
       "name": "AI Text Generator",
       "endpoint": "https://api.openai.com/v1/chat/completions",
       "category": "ai/text",
@@ -362,15 +362,15 @@
         }
       ],
       "requiresKey": true,
-      "apiKey": "ak_46a3c51ba452d52a990cf81bdf3d22807fb4ca5a",
+      "apiKey": "ak_d040895c8264be5ca866e37e8874115232b145ce",
       "apiType": "proxy",
       "handlerFile": "",
       "isActive": true,
-      "createdAt": "2026-02-13T17:21:00.087Z",
-      "updatedAt": "2026-02-13T17:21:00.087Z"
+      "createdAt": "2026-02-13T17:28:11.847Z",
+      "updatedAt": "2026-02-13T17:28:11.847Z"
     },
     {
-      "id": "6c0750ca-1e96-48b9-9c09-037b532464ce",
+      "id": "a50a3ac6-64bf-45b6-9fe0-c2af17415de3",
       "name": "YouTube Downloader",
       "endpoint": "https://api.example.com/ytdl",
       "category": "Downloader",
@@ -403,15 +403,15 @@
         }
       ],
       "requiresKey": true,
-      "apiKey": "ak_1de461b90b1f99bd0691f1fff762b5cd962a2f2c",
+      "apiKey": "ak_3380d441f05bac6d83f6bb761a7f85f1f8f315e1",
       "apiType": "proxy",
       "handlerFile": "",
       "isActive": true,
-      "createdAt": "2026-02-13T17:21:00.087Z",
-      "updatedAt": "2026-02-13T17:21:00.087Z"
+      "createdAt": "2026-02-13T17:28:11.847Z",
+      "updatedAt": "2026-02-13T17:28:11.847Z"
     },
     {
-      "id": "708ce35d-0c57-45f9-a577-94d3f8aa38cc",
+      "id": "27013d17-a032-4a02-a462-668d05f65475",
       "name": "TikTok Downloader",
       "endpoint": "https://api.example.com/tiktok",
       "category": "Downloader",
@@ -442,11 +442,11 @@
       "apiType": "proxy",
       "handlerFile": "",
       "isActive": true,
-      "createdAt": "2026-02-13T17:21:00.087Z",
-      "updatedAt": "2026-02-13T17:21:00.087Z"
+      "createdAt": "2026-02-13T17:28:11.847Z",
+      "updatedAt": "2026-02-13T17:28:11.847Z"
     },
     {
-      "id": "e147a4e4-2e9f-41ee-815a-32aab8a4e990",
+      "id": "87f29593-bbca-4324-ba7e-01601f652ce9",
       "name": "Image AI",
       "endpoint": "",
       "category": "ai/image",
@@ -500,14 +500,26 @@
       "apiType": "local",
       "handlerFile": "image-ai",
       "isActive": true,
-      "createdAt": "2026-02-13T17:21:00.087Z",
-      "updatedAt": "2026-02-13T17:21:00.087Z"
+      "createdAt": "2026-02-13T17:28:11.847Z",
+      "updatedAt": "2026-02-13T17:28:11.847Z"
     }
   ],
-  "admin": {
-    "username": "admin",
-    "password": "$2b$10$a3HCYr5sP5HQAQ0FxvzoQe4Uzrz9fRiuZy95yqk76aZxtEgqtwqIe"
-  },
+  "apikeys": [
+    {
+      "id": "a8b4613d-01a9-48ff-929c-1c598ba6772a",
+      "key": "ak_a442dbfaa0543172166cdb87bb749e4a6c5e5682c394a98c",
+      "owner": "Bot_WhatsApp_A",
+      "isActive": true,
+      "createdAt": "2026-02-13T17:28:11.847Z"
+    },
+    {
+      "id": "a104993c-02b7-49ab-9b7f-41c62f71c900",
+      "key": "ak_96dbb143ff220005819b48d7f0864b725a55f41616f955c6",
+      "owner": "Bot_Telegram_B",
+      "isActive": true,
+      "createdAt": "2026-02-13T17:28:11.847Z"
+    }
+  ],
   "settings": {
     "heroTitle": "API DapzSYZ",
     "heroSubtitle": "for Bot Integration",
@@ -529,20 +541,8 @@
       }
     }
   },
-  "apikeys": [
-    {
-      "id": "c9ed0f93-96de-4c2f-bd21-e084432f2b97",
-      "key": "ak_d5d1e600a81ee20bd54c2e4f9bb4e81503be480df071f53b",
-      "owner": "Bot_WhatsApp_A",
-      "isActive": true,
-      "createdAt": "2026-02-13T17:21:00.087Z"
-    },
-    {
-      "id": "57ca62b5-6f65-4c04-a6ad-0e13454fa530",
-      "key": "ak_75a6beb047f17c076e3366073060e549c05c5e12bbfe1c3a",
-      "owner": "Bot_Telegram_B",
-      "isActive": true,
-      "createdAt": "2026-02-13T17:21:00.087Z"
-    }
-  ]
+  "admin": {
+    "username": "admin",
+    "password": "$2b$10$LYjAAI.2964vA2b5PdKcy.MzMtarLwGcnzdC/mhS9Rwxk74hqAfaa"
+  }
 }

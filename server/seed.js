@@ -6,7 +6,7 @@ const { v4: uuidv4 } = require('uuid');
 const crypto = require('crypto');
 require('dotenv').config({ path: path.join(__dirname, '..', '.env') });
 
-const adapter = new FileSync(path.join(__dirname, 'db.json'));
+const adapter = new FileSync(path.join(__dirname, '..', 'db.json'));
 const db = low(adapter);
 
 const generateApiKey = () => 'ak_' + crypto.randomBytes(20).toString('hex');

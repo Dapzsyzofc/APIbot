@@ -1,18 +1,14 @@
 const express = require('express');
-const low = require('lowdb');
-const FileSync = require('lowdb/adapters/FileSync');
-const path = require('path');
 const authMiddleware = require('../middleware/auth');
+const { getDb } = require('../db');
 
 const router = express.Router();
-const adapter = new FileSync(path.join(__dirname, '..', 'db.json'));
-const db = low(adapter);
 
 // GET /api/settings - Public: get site settings
 router.get('/', (req, res) => {
-    db.read(); // force re-read
+    const db = getDb();
     const settings = db.get('settings').value();
-    if (!settings) {
+    if (!settings || Object.keys(settings).length === 0) {
         return res.json({
             heroTitle: 'API DapzSYZ',
             heroSubtitle: 'for Bot Integration',
@@ -41,7 +37,7 @@ router.put('/', authMiddleware, (req, res) => {
     if (footerMotto !== undefined) updates.footerMotto = footerMotto;
     if (socials !== undefined) updates.socials = socials;
 
-    db.read();
+    const db = getDb();
     const current = db.get('settings').value() || {};
     db.set('settings', { ...current, ...updates }).write();
 

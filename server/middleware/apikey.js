@@ -1,14 +1,7 @@
-const low = require('lowdb');
-const FileSync = require('lowdb/adapters/FileSync');
-const path = require('path');
-
-const dbPath = path.join(__dirname, '..', 'db.json');
+const { getDb } = require('../db');
 
 const apikeyMiddleware = (req, res, next) => {
-    // Re-read database on EVERY request for instant sync with admin changes
-    const adapter = new FileSync(dbPath);
-    const db = low(adapter);
-    db.defaults({ apikeys: [] }).write();
+    const db = getDb();
 
     const apiId = req.params.id;
     const api = db.get('apis').find({ id: apiId }).value();

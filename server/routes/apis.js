@@ -1,14 +1,10 @@
 const express = require('express');
 const { v4: uuidv4 } = require('uuid');
-const low = require('lowdb');
-const FileSync = require('lowdb/adapters/FileSync');
-const path = require('path');
-const authMiddleware = require('../middleware/auth');
 const crypto = require('crypto');
+const authMiddleware = require('../middleware/auth');
+const { getDb } = require('../db');
 
 const router = express.Router();
-const adapter = new FileSync(path.join(__dirname, '..', 'db.json'));
-const db = low(adapter);
 
 const generateApiKey = () => {
     return 'ak_' + crypto.randomBytes(20).toString('hex');
@@ -16,6 +12,7 @@ const generateApiKey = () => {
 
 // GET /api/manage/apis - Public: list all APIs
 router.get('/apis', (req, res) => {
+    const db = getDb();
     const apis = db.get('apis').value();
     const publicApis = apis.map(({ apiKey, ...rest }) => ({
         ...rest,
@@ -26,12 +23,14 @@ router.get('/apis', (req, res) => {
 
 // GET /api/manage/apis/admin - Admin: list all APIs with full data
 router.get('/apis/admin', authMiddleware, (req, res) => {
+    const db = getDb();
     const apis = db.get('apis').value();
     res.json(apis);
 });
 
 // GET /api/manage/apis/:id - Public: get single API
 router.get('/apis/:id', (req, res) => {
+    const db = getDb();
     const api = db.get('apis').find({ id: req.params.id }).value();
     if (!api) {
         return res.status(404).json({ error: 'API not found.' });
@@ -42,6 +41,7 @@ router.get('/apis/:id', (req, res) => {
 
 // GET /api/manage/stats - Public: get statistics
 router.get('/stats', (req, res) => {
+    const db = getDb();
     const apis = db.get('apis').value();
     const categories = [...new Set(apis.map(a => a.category))];
     res.json({
@@ -57,6 +57,7 @@ router.get('/stats', (req, res) => {
 
 // GET /api/manage/categories - Public: get unique category list
 router.get('/categories', (req, res) => {
+    const db = getDb();
     const apis = db.get('apis').value();
     const categories = [...new Set(apis.map(a => a.category))];
     res.json(categories);
@@ -70,11 +71,11 @@ router.post('/apis', authMiddleware, (req, res) => {
         return res.status(400).json({ error: 'Name and category are required.' });
     }
 
-    // For proxy type, endpoint is required
     if ((!apiType || apiType === 'proxy') && !endpoint) {
         return res.status(400).json({ error: 'Endpoint URL is required for proxy APIs.' });
     }
 
+    const db = getDb();
     const newApi = {
         id: uuidv4(),
         name,
@@ -99,6 +100,7 @@ router.post('/apis', authMiddleware, (req, res) => {
 
 // PUT /api/manage/apis/:id - Admin: update API
 router.put('/apis/:id', authMiddleware, (req, res) => {
+    const db = getDb();
     const api = db.get('apis').find({ id: req.params.id }).value();
     if (!api) {
         return res.status(404).json({ error: 'API not found.' });
@@ -136,6 +138,7 @@ router.put('/apis/:id', authMiddleware, (req, res) => {
 
 // PATCH /api/manage/apis/:id/toggle - Admin: toggle active/key
 router.patch('/apis/:id/toggle', authMiddleware, (req, res) => {
+    const db = getDb();
     const api = db.get('apis').find({ id: req.params.id }).value();
     if (!api) {
         return res.status(404).json({ error: 'API not found.' });
@@ -166,6 +169,7 @@ router.patch('/apis/:id/toggle', authMiddleware, (req, res) => {
 
 // DELETE /api/manage/apis/:id - Admin: delete API
 router.delete('/apis/:id', authMiddleware, (req, res) => {
+    const db = getDb();
     const api = db.get('apis').find({ id: req.params.id }).value();
     if (!api) {
         return res.status(404).json({ error: 'API not found.' });

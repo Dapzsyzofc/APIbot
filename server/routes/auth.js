@@ -1,22 +1,9 @@
 const express = require('express');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
-const low = require('lowdb');
-const FileSync = require('lowdb/adapters/FileSync');
-const path = require('path');
+const { getDb } = require('../db');
 
 const router = express.Router();
-const adapter = new FileSync(path.join(__dirname, '..', 'db.json'));
-const db = low(adapter);
-
-// Initialize default admin
-db.defaults({
-    apis: [],
-    admin: {
-        username: process.env.ADMIN_USERNAME || 'admin',
-        password: bcrypt.hashSync(process.env.ADMIN_PASSWORD || 'admin123', 10),
-    }
-}).write();
 
 // POST /api/auth/login
 router.post('/login', (req, res) => {
@@ -26,9 +13,10 @@ router.post('/login', (req, res) => {
         return res.status(400).json({ error: 'Username and password are required.' });
     }
 
+    const db = getDb();
     const admin = db.get('admin').value();
 
-    if (username !== admin.username) {
+    if (!admin || username !== admin.username) {
         return res.status(401).json({ error: 'Invalid credentials.' });
     }
 
