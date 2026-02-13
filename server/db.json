@@ -1,0 +1,548 @@
+{
+  "apis": [
+    {
+      "id": "13162c0c-20ed-49cd-836c-b65c2a592556",
+      "name": "Remove Background",
+      "endpoint": "https://api.remove.bg/v1.0/removebg",
+      "category": "Tools",
+      "description": "Remove background from any image automatically using AI. Supports PNG, JPG, and WebP formats.",
+      "method": "GET",
+      "parameters": [
+        {
+          "name": "url",
+          "type": "string",
+          "status": "required",
+          "description": "Direct URL to the image"
+        }
+      ],
+      "statusCodes": [
+        {
+          "code": "200",
+          "message": "Success",
+          "description": "Image background removed successfully"
+        },
+        {
+          "code": "400",
+          "message": "Bad Request",
+          "description": "Invalid or missing image URL"
+        },
+        {
+          "code": "429",
+          "message": "Rate Limited",
+          "description": "Too many requests, please slow down"
+        }
+      ],
+      "requiresKey": false,
+      "apiKey": null,
+      "apiType": "proxy",
+      "handlerFile": "",
+      "isActive": true,
+      "createdAt": "2026-02-13T16:32:21.567Z",
+      "updatedAt": "2026-02-13T16:36:12.963Z"
+    },
+    {
+      "id": "9e2d721a-a0c8-4d29-aee3-7147bea9da96",
+      "name": "QR Code Generator",
+      "endpoint": "https://api.qrserver.com/v1/create-qr-code/",
+      "category": "Tools",
+      "description": "Generate QR codes from any text or URL. Customize size and color.",
+      "method": "GET",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "string",
+          "status": "required",
+          "description": "Text or URL to encode"
+        },
+        {
+          "name": "size",
+          "type": "string",
+          "status": "optional",
+          "description": "QR code size (e.g. 200x200)"
+        }
+      ],
+      "statusCodes": [
+        {
+          "code": "200",
+          "message": "Success",
+          "description": "QR code generated"
+        },
+        {
+          "code": "400",
+          "message": "Bad Request",
+          "description": "Missing data parameter"
+        }
+      ],
+      "requiresKey": false,
+      "apiKey": null,
+      "apiType": "proxy",
+      "handlerFile": "",
+      "isActive": true,
+      "createdAt": "2026-02-13T16:32:21.577Z",
+      "updatedAt": "2026-02-13T16:32:21.577Z"
+    },
+    {
+      "id": "787944a1-ef2c-4555-8325-d6780332d4f9",
+      "name": "Screenshot Website",
+      "endpoint": "https://shot.screenshotapi.net/screenshot",
+      "category": "Tools",
+      "description": "Capture full-page screenshots of any website.",
+      "method": "GET",
+      "parameters": [
+        {
+          "name": "url",
+          "type": "string",
+          "status": "required",
+          "description": "Website URL to capture"
+        },
+        {
+          "name": "width",
+          "type": "number",
+          "status": "optional",
+          "description": "Viewport width in pixels"
+        }
+      ],
+      "statusCodes": [
+        {
+          "code": "200",
+          "message": "Success",
+          "description": "Screenshot captured"
+        },
+        {
+          "code": "408",
+          "message": "Timeout",
+          "description": "Website took too long to load"
+        }
+      ],
+      "requiresKey": false,
+      "apiKey": null,
+      "apiType": "proxy",
+      "handlerFile": "",
+      "isActive": true,
+      "createdAt": "2026-02-13T16:32:21.577Z",
+      "updatedAt": "2026-02-13T16:36:13.969Z"
+    },
+    {
+      "id": "962f2a7d-9fe3-466d-a2ce-36717ce6a3ff",
+      "name": "Anime Waifu",
+      "endpoint": "https://api.waifu.pics/sfw/waifu",
+      "category": "E-photo",
+      "description": "Get random anime waifu images. Safe for work, high quality artwork.",
+      "method": "GET",
+      "parameters": [],
+      "statusCodes": [
+        {
+          "code": "200",
+          "message": "Success",
+          "description": "Random waifu image returned"
+        }
+      ],
+      "requiresKey": false,
+      "apiKey": null,
+      "apiType": "proxy",
+      "handlerFile": "",
+      "isActive": true,
+      "createdAt": "2026-02-13T16:32:21.577Z",
+      "updatedAt": "2026-02-13T16:32:21.577Z"
+    },
+    {
+      "id": "da686cc3-b091-4a17-8331-8877b9c72624",
+      "name": "Random Meme",
+      "endpoint": "https://meme-api.com/gimme",
+      "category": "E-photo",
+      "description": "Fetch random memes from popular subreddits.",
+      "method": "GET",
+      "parameters": [
+        {
+          "name": "count",
+          "type": "number",
+          "status": "optional",
+          "description": "Number of memes (max 50)"
+        }
+      ],
+      "statusCodes": [
+        {
+          "code": "200",
+          "message": "Success",
+          "description": "Memes returned"
+        }
+      ],
+      "requiresKey": false,
+      "apiKey": null,
+      "apiType": "proxy",
+      "handlerFile": "",
+      "isActive": true,
+      "createdAt": "2026-02-13T16:32:21.577Z",
+      "updatedAt": "2026-02-13T16:32:21.577Z"
+    },
+    {
+      "id": "9bb3832e-3241-40cb-a89a-f14ba6fa9636",
+      "name": "Truth or Dare",
+      "endpoint": "https://api.truthordarebot.xyz/v1/truth",
+      "category": "Games",
+      "description": "Get random truth or dare questions for party games.",
+      "method": "GET",
+      "parameters": [
+        {
+          "name": "rating",
+          "type": "string",
+          "status": "optional",
+          "description": "Rating: pg, pg13, r"
+        }
+      ],
+      "statusCodes": [
+        {
+          "code": "200",
+          "message": "Success",
+          "description": "Question returned"
+        }
+      ],
+      "requiresKey": false,
+      "apiKey": null,
+      "apiType": "proxy",
+      "handlerFile": "",
+      "isActive": true,
+      "createdAt": "2026-02-13T16:32:21.577Z",
+      "updatedAt": "2026-02-13T16:32:21.577Z"
+    },
+    {
+      "id": "ba7e50ea-0f0d-4e33-b729-8ad0d9856b80",
+      "name": "Trivia Quiz",
+      "endpoint": "https://opentdb.com/api.php",
+      "category": "Games",
+      "description": "Generate random trivia questions across multiple categories.",
+      "method": "GET",
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "number",
+          "status": "required",
+          "description": "Number of questions"
+        },
+        {
+          "name": "difficulty",
+          "type": "string",
+          "status": "optional",
+          "description": "easy, medium, hard"
+        }
+      ],
+      "statusCodes": [
+        {
+          "code": "200",
+          "message": "Success",
+          "description": "Trivia questions returned"
+        },
+        {
+          "code": "400",
+          "message": "Bad Request",
+          "description": "Invalid amount"
+        }
+      ],
+      "requiresKey": false,
+      "apiKey": null,
+      "apiType": "proxy",
+      "handlerFile": "",
+      "isActive": true,
+      "createdAt": "2026-02-13T16:32:21.577Z",
+      "updatedAt": "2026-02-13T16:32:21.577Z"
+    },
+    {
+      "id": "1d192cf3-b92f-4970-92c8-5988ccd24dca",
+      "name": "Weather Info",
+      "endpoint": "https://api.openweathermap.org/data/2.5/weather",
+      "category": "Information",
+      "description": "Get current weather data for any city.",
+      "method": "GET",
+      "parameters": [
+        {
+          "name": "q",
+          "type": "string",
+          "status": "required",
+          "description": "City name"
+        },
+        {
+          "name": "units",
+          "type": "string",
+          "status": "optional",
+          "description": "metric or imperial"
+        }
+      ],
+      "statusCodes": [
+        {
+          "code": "200",
+          "message": "Success",
+          "description": "Weather data returned"
+        },
+        {
+          "code": "404",
+          "message": "Not Found",
+          "description": "City not found"
+        }
+      ],
+      "requiresKey": false,
+      "apiKey": null,
+      "apiType": "proxy",
+      "handlerFile": "",
+      "isActive": true,
+      "createdAt": "2026-02-13T16:32:21.577Z",
+      "updatedAt": "2026-02-13T16:36:17.430Z"
+    },
+    {
+      "id": "43e97e69-b6ff-46cd-a22d-e309948bd1a8",
+      "name": "Islamic Prayer Times",
+      "endpoint": "https://api.aladhan.com/v1/timingsByCity",
+      "category": "Information",
+      "description": "Get accurate Islamic prayer times by city.",
+      "method": "GET",
+      "parameters": [
+        {
+          "name": "city",
+          "type": "string",
+          "status": "required",
+          "description": "City name"
+        },
+        {
+          "name": "country",
+          "type": "string",
+          "status": "required",
+          "description": "Country name"
+        }
+      ],
+      "statusCodes": [
+        {
+          "code": "200",
+          "message": "Success",
+          "description": "Prayer times returned"
+        }
+      ],
+      "requiresKey": false,
+      "apiKey": null,
+      "apiType": "proxy",
+      "handlerFile": "",
+      "isActive": true,
+      "createdAt": "2026-02-13T16:32:21.577Z",
+      "updatedAt": "2026-02-13T16:32:21.577Z"
+    },
+    {
+      "id": "d18b8236-cda7-4d7f-adcc-354144d87c6a",
+      "name": "AI Text Generator",
+      "endpoint": "https://api.openai.com/v1/chat/completions",
+      "category": "ai/text",
+      "description": "Generate intelligent text responses using AI models.",
+      "method": "POST",
+      "parameters": [
+        {
+          "name": "prompt",
+          "type": "string",
+          "status": "required",
+          "description": "Text prompt for AI"
+        },
+        {
+          "name": "model",
+          "type": "string",
+          "status": "optional",
+          "description": "AI model to use"
+        }
+      ],
+      "statusCodes": [
+        {
+          "code": "200",
+          "message": "Success",
+          "description": "AI response generated"
+        },
+        {
+          "code": "401",
+          "message": "Unauthorized",
+          "description": "Invalid API key"
+        },
+        {
+          "code": "429",
+          "message": "Rate Limited",
+          "description": "Too many requests"
+        }
+      ],
+      "requiresKey": false,
+      "apiKey": null,
+      "apiType": "proxy",
+      "handlerFile": "",
+      "isActive": true,
+      "createdAt": "2026-02-13T16:32:21.578Z",
+      "updatedAt": "2026-02-13T16:36:15.642Z"
+    },
+    {
+      "id": "b832f8d7-13b4-486b-8be6-f550ee54bfc3",
+      "name": "YouTube Downloader",
+      "endpoint": "https://api.example.com/ytdl",
+      "category": "Downloader",
+      "description": "Download YouTube videos in multiple formats and qualities.",
+      "method": "GET",
+      "parameters": [
+        {
+          "name": "url",
+          "type": "string",
+          "status": "required",
+          "description": "YouTube video URL"
+        },
+        {
+          "name": "format",
+          "type": "string",
+          "status": "optional",
+          "description": "mp4, mp3, webm"
+        }
+      ],
+      "statusCodes": [
+        {
+          "code": "200",
+          "message": "Success",
+          "description": "Download link generated"
+        },
+        {
+          "code": "400",
+          "message": "Bad Request",
+          "description": "Invalid YouTube URL"
+        }
+      ],
+      "requiresKey": false,
+      "apiKey": null,
+      "apiType": "proxy",
+      "handlerFile": "",
+      "isActive": true,
+      "createdAt": "2026-02-13T16:32:21.578Z",
+      "updatedAt": "2026-02-13T16:36:16.454Z"
+    },
+    {
+      "id": "50c0beea-bf1c-416b-96aa-6ec384864123",
+      "name": "TikTok Downloader",
+      "endpoint": "https://api.example.com/tiktok",
+      "category": "Downloader",
+      "description": "Download TikTok videos without watermark.",
+      "method": "GET",
+      "parameters": [
+        {
+          "name": "url",
+          "type": "string",
+          "status": "required",
+          "description": "TikTok video URL"
+        }
+      ],
+      "statusCodes": [
+        {
+          "code": "200",
+          "message": "Success",
+          "description": "Video download ready"
+        },
+        {
+          "code": "400",
+          "message": "Bad Request",
+          "description": "Invalid TikTok URL"
+        }
+      ],
+      "requiresKey": false,
+      "apiKey": null,
+      "apiType": "proxy",
+      "handlerFile": "",
+      "isActive": true,
+      "createdAt": "2026-02-13T16:32:21.578Z",
+      "updatedAt": "2026-02-13T16:32:21.578Z"
+    },
+    {
+      "id": "f996f0f3-186f-41c6-b1fb-22950205e128",
+      "name": "Image AI",
+      "endpoint": "",
+      "category": "ai/image",
+      "description": "AI-powered image processing. Supports text-to-image, image-to-image, and file upload transformations using local handler.",
+      "method": "GET",
+      "parameters": [
+        {
+          "name": "prompt",
+          "type": "string",
+          "status": "optional",
+          "description": "Text prompt for AI generation"
+        },
+        {
+          "name": "image",
+          "type": "string",
+          "status": "optional",
+          "description": "Image URL for transformation"
+        },
+        {
+          "name": "file",
+          "type": "file",
+          "status": "optional",
+          "description": "Upload image file for processing"
+        },
+        {
+          "name": "style",
+          "type": "string",
+          "status": "optional",
+          "description": "Art style (anime, realistic, etc)"
+        }
+      ],
+      "statusCodes": [
+        {
+          "code": "200",
+          "message": "Success",
+          "description": "Image processed successfully"
+        },
+        {
+          "code": "400",
+          "message": "Bad Request",
+          "description": "Missing prompt or image parameter"
+        },
+        {
+          "code": "501",
+          "message": "Not Implemented",
+          "description": "Handler file not found"
+        }
+      ],
+      "requiresKey": false,
+      "apiKey": null,
+      "apiType": "local",
+      "handlerFile": "image-ai",
+      "isActive": true,
+      "createdAt": "2026-02-13T16:32:21.578Z",
+      "updatedAt": "2026-02-13T16:32:21.578Z"
+    }
+  ],
+  "admin": {
+    "username": "admin",
+    "password": "$2b$10$Okyy51WsPf5/ldEn.lDylO1u/NurBayOn96U4dqCstbGhFY175oRK"
+  },
+  "settings": {
+    "heroTitle": "API DapzSYZ",
+    "heroSubtitle": "for Bot Integration",
+    "heroDescription": "Platform lengkap untuk mengelola, mendokumentasikan, dan menguji API WhatsApp & Telegram Bot kamu.",
+    "footerText": "Made with ❤️ by DapzSYZ",
+    "footerMotto": "Platform API Documentation untuk Bot WhatsApp & Telegram.",
+    "socials": {
+      "whatsapp": {
+        "url": "https://wa.me/628xxx",
+        "enabled": true
+      },
+      "github": {
+        "url": "https://github.com/dapzsyz",
+        "enabled": true
+      },
+      "instagram": {
+        "url": "https://instagram.com/dapzsyz",
+        "enabled": true
+      }
+    }
+  },
+  "apikeys": [
+    {
+      "id": "d3b79516-8e9d-4ebf-89d2-647ea53734d5",
+      "key": "ak_a907398e93821d842c83ef7223c22d631cb4d6dc4a0c7b31",
+      "owner": "Bot_WhatsApp_A",
+      "isActive": true,
+      "createdAt": "2026-02-13T16:32:21.578Z"
+    },
+    {
+      "id": "f8780a4e-c4b3-4434-af45-4873afdddbb9",
+      "key": "ak_e166455effaccd6d735abb0f90e7dae92782eeb4355a0943",
+      "owner": "Bot_Telegram_B",
+      "isActive": true,
+      "createdAt": "2026-02-13T16:32:21.578Z"
+    }
+  ]
+}
