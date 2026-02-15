@@ -16,6 +16,10 @@ export default function Dashboard() {
             setStats(statsRes.data);
             const sorted = apisRes.data.sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt));
             setRecentApis(sorted.slice(0, 5));
+        }).catch(() => {
+            // Gracefully handle errors — show empty dashboard instead of crashing
+            setStats({ totalApis: 0, activeApis: 0, withKey: 0, categories: 0, localHandlers: 0 });
+            setRecentApis([]);
         }).finally(() => setLoading(false));
     }, []);
 

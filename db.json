@@ -32,13 +32,13 @@
           "description": "Too many requests, please slow down"
         }
       ],
-      "requiresKey": true,
-      "apiKey": "ak_b1f1ae130e8a02c3284d42a94b11bbf1d35da892",
+      "requiresKey": false,
+      "apiKey": null,
       "apiType": "proxy",
       "handlerFile": "",
       "isActive": true,
       "createdAt": "2026-02-15T23:28:26.674Z",
-      "updatedAt": "2026-02-15T23:28:26.686Z"
+      "updatedAt": "2026-02-15T23:45:15.327Z"
     },
     {
       "id": "6aeedc5f-d7be-459f-82a6-8c4bd4276f80",
@@ -114,13 +114,13 @@
           "description": "Website took too long to load"
         }
       ],
-      "requiresKey": true,
-      "apiKey": "ak_4264b5898d3217bf63d097149ffbcaf7678448c7",
+      "requiresKey": false,
+      "apiKey": null,
       "apiType": "proxy",
       "handlerFile": "",
       "isActive": true,
       "createdAt": "2026-02-15T23:28:26.686Z",
-      "updatedAt": "2026-02-15T23:28:26.686Z"
+      "updatedAt": "2026-02-15T23:45:16.232Z"
     },
     {
       "id": "f96eccd6-1c7c-42f5-b737-b99efc0b014a",
@@ -279,13 +279,13 @@
           "description": "City not found"
         }
       ],
-      "requiresKey": true,
-      "apiKey": "ak_34ddbee351faeb514aa88e1764ec9aa1ecb84779",
+      "requiresKey": false,
+      "apiKey": null,
       "apiType": "proxy",
       "handlerFile": "",
       "isActive": true,
       "createdAt": "2026-02-15T23:28:26.686Z",
-      "updatedAt": "2026-02-15T23:28:26.686Z"
+      "updatedAt": "2026-02-15T23:45:18.954Z"
     },
     {
       "id": "39c5b7b2-e4b0-4e9a-92ce-379044be188c",
@@ -321,7 +321,7 @@
       "handlerFile": "",
       "isActive": true,
       "createdAt": "2026-02-15T23:28:26.686Z",
-      "updatedAt": "2026-02-15T23:28:26.686Z"
+      "updatedAt": "2026-02-15T23:45:21.478Z"
     },
     {
       "id": "11d9d696-df64-4645-a635-191ccf85d3ec",
@@ -361,13 +361,13 @@
           "description": "Too many requests"
         }
       ],
-      "requiresKey": true,
-      "apiKey": "ak_4ec91158247d03f775e2f0c9cf0d9cb0e57c19fa",
+      "requiresKey": false,
+      "apiKey": null,
       "apiType": "proxy",
       "handlerFile": "",
       "isActive": true,
       "createdAt": "2026-02-15T23:28:26.686Z",
-      "updatedAt": "2026-02-15T23:28:26.686Z"
+      "updatedAt": "2026-02-15T23:45:18.043Z"
     },
     {
       "id": "c833ee3a-d86e-48f1-b3a1-728d24be6981",
@@ -402,13 +402,13 @@
           "description": "Invalid YouTube URL"
         }
       ],
-      "requiresKey": true,
-      "apiKey": "ak_66234585c853e65f1f616dc46ba54879aaaf49a5",
+      "requiresKey": false,
+      "apiKey": null,
       "apiType": "proxy",
       "handlerFile": "",
       "isActive": true,
       "createdAt": "2026-02-15T23:28:26.686Z",
-      "updatedAt": "2026-02-15T23:28:26.686Z"
+      "updatedAt": "2026-02-15T23:45:17.570Z"
     },
     {
       "id": "76e567a9-f740-4f9d-889a-b0bd9afd4495",
@@ -509,14 +509,14 @@
       "id": "efebab92-9df5-4f20-b405-da2699233b38",
       "key": "ak_af526c6688cb0f630226cb7fbb9bce9b85cd5d83d734e06a",
       "owner": "Bot_WhatsApp_A",
-      "isActive": true,
+      "isActive": false,
       "createdAt": "2026-02-15T23:28:26.686Z"
     },
     {
       "id": "b75efe1f-2a9b-4553-8c57-9772917468cf",
       "key": "ak_49b8291f70dca704528e998039e5d00a92fa6796c97f75a4",
       "owner": "Bot_Telegram_B",
-      "isActive": true,
+      "isActive": false,
       "createdAt": "2026-02-15T23:28:26.686Z"
     }
   ],

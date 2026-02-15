@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Navigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { Lock, Loader2, AlertCircle, Zap } from 'lucide-react';
 
@@ -13,8 +13,7 @@ export default function Login() {
 
     // Redirect if already logged in
     if (isAuthenticated) {
-        navigate('/admin');
-        return null;
+        return <Navigate to="/admin" replace />;
     }
 
     const handleSubmit = async (e) => {
