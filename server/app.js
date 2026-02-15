@@ -1,4 +1,5 @@
-require('dotenv').config();
+try { require('dotenv').config(); } catch { }
+
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
@@ -27,7 +28,7 @@ app.get('/api/health', (req, res) => {
     res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
-// ─── Production: serve React build (only when not on Vercel) ─────
+// ─── Production: serve React build (local only, not Vercel) ─────
 if (!process.env.VERCEL) {
     const distPath = path.join(__dirname, '..', 'dist');
     app.use(express.static(distPath));

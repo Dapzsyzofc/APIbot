@@ -1,3 +1,3 @@
-// Vercel serverless entry — exports Express app
-const app = require('../server/app.js');
+// Vercel serverless entry point
+const app = require('../server/app');
 module.exports = app;
